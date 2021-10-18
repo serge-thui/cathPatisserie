@@ -3,7 +3,9 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <name> Serge <role> Product Owner <twitter>
+	   Steven	Scrum Master
+	   Mehdi	Developper
 
 # THANKS
 
