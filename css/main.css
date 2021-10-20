@@ -16,13 +16,42 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
+figure, ul{
+  margin: 0;
+  padding: 0;
+}
 
 /* Css du header */
 
 header{
+  height: 100px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  background:no-repeat url(/img/cooking-g4950c2972_640.jpg);
+  background-size: cover;
 }
+
+.logo-du-site img{
+  height: 100px;
+  width: 200px;
+}
+.iconePanier img{
+  height: 20%;
+  width: 20%;
+}
+
+header ul{
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+
 
 /*
  * Remove text-shadow in selection highlight:
