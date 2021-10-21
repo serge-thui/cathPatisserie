@@ -55,16 +55,18 @@
 
         <aside class="nom_prenom">
 
-            <input type="text" name="lastname" class="nom" placeholder="Votre nom*" required>
-            <input type="text" name="firstname" class="prenom" placeholder="Votre prénom*" required>
+            <input type="text" name="lastname" class="nom" placeholder="Votre nom*" title="Veuillez entrer votre nom de famille." required>
+            <input type="text" name="firstname" class="prenom" placeholder="Votre prénom*" title="Veuillez entrer votre prénom." required>
 
         </aside>
 
-            <input type="email" name="email" class="email" placeholder="Votre adresse e-mail*" required>
-        
-            <input type="text" name="object" id="object" placeholder="L'objet de votre demande*" required>
+            <input type="email" name="email" class="email" placeholder="Votre adresse e-mail*" title="Veuillez entrer votre adresse e-mail." required>
 
-            <textarea name="message" id="message" cols="50" rows="10" placeholder="Exprimez votre demande en détails ici...*" required></textarea>
+            <input type="tel" name="telephone" class="telephone" placeholder="Votre numéro de téléphone" title="Veuillez entrer votre numéro de téléphone (uniquement des chiffres).">
+        
+            <input type="text" name="object" class="object" placeholder="L'objet de votre demande*" title="Veuillez entrer l'objet de votre demande." required>
+
+            <textarea name="message" class="message" cols="50" rows="10" placeholder="Exprimez votre demande en détails ici...*" title="Veuillez détailler votre demande." required></textarea>
 
         <aside class="btn_submit_reset">
 
