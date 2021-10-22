@@ -60,6 +60,30 @@ header ul{
   list-style: none;
 }
 
+    /* css du menu déroulant*/
+    .menuderoulant:hover{
+      color: #999;
+    }
+    .menuderoulant{
+      position: relative;
+      display :inline-block;
+    }
+    .sous-menu{
+      margin-top: 150px;
+      display: none;
+      min-width: 150px;
+      font-size: 0.5em;
+      padding-top: 150px;
+    }
+    .sous-menu a{
+      padding: 20px;
+      text-decoration: none;
+      display: block;
+    }
+    .menuderoulant:hover .sous-menu{
+      display: block;
+    }
+
 /* css index.html */ 
   /*accueil-top*/
 .accueil-top{
