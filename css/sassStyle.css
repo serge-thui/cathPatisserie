@@ -26,7 +26,7 @@ footer .contact ul li {
   font-weight: bold;
   text-align: center;
   list-style-type: none;
-  color: #eb1ecf;
+  color: #e1208d;
 }
 footer .figurefooter {
   margin: 0;
@@ -105,6 +105,14 @@ html {
 body {
   margin: 0;
   padding: 0;
+}
+
+h1, h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
 }
 
 /*# sourceMappingURL=sassStyle.css.map */
