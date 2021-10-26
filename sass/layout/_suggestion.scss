@@ -17,3 +17,9 @@ h2 {
                 }
         }
 }
+
+@include mobile {
+    h2, .suggestion {
+    display: none;
+    }
+}

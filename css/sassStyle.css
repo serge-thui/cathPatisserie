@@ -71,6 +71,11 @@ h2 {
   margin: 0;
 }
 
+@media screen and (max-width: 599px) {
+  h2, .suggestion {
+    display: none;
+  }
+}
 h1 {
   text-align: center;
 }
@@ -89,6 +94,17 @@ h1 {
 .contact_form figure img {
   width: auto;
   box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.34);
+}
+
+@media screen and (max-width: 599px) {
+  .contact_form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
+  .contact_form figure {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=sassStyle.css.map */
