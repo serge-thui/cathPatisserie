@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+.contact_form {
+    display: flex;
+    justify-content: space-evenly;
+
+        figure {
+            width: 50%;
+            margin: auto 0;
+            display: flex;
+            justify-content: center;
+            
+            img {
+                width: auto;
+                box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.34);
+            }
+        }
+    
+}

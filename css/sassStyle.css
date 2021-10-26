@@ -42,4 +42,41 @@ form .btn_submit_reset input[type=submit]:hover, form .btn_submit_reset input[ty
   color: white;
 }
 
+h2 {
+  margin-left: 3em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.suggestion_liste {
+  display: flex;
+  justify-content: space-evenly;
+}
+.suggestion_liste figcaption {
+  display: flex;
+  justify-content: space-between;
+}
+.suggestion_liste figcaption p {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.contact_form {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact_form figure {
+  width: 50%;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+}
+.contact_form figure img {
+  width: auto;
+  box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.34);
+}
+
 /*# sourceMappingURL=sassStyle.css.map */
