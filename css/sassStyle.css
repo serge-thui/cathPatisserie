@@ -1,7 +1,7 @@
 footer {
   height: 150px;
   width: 100%;
-  bottom: 0%;
+  padding-bottom: 1%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -11,7 +11,7 @@ footer .contact {
   width: 25%;
   display: flex;
   height: 100%;
-  flex-direction: column;
+  justify-content: center;
 }
 footer .contact ul {
   height: 100%;
@@ -19,20 +19,92 @@ footer .contact ul {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin: 0%;
+  padding: 0%;
 }
 footer .contact ul li {
   font-weight: bold;
   text-align: center;
+  list-style-type: none;
   color: #eb1ecf;
 }
-footer .logoFooter img {
-  height: 100px;
+footer .figurefooter {
+  margin: 0;
+  height: 100%;
+}
+footer .figurefooter img {
+  height: 100%;
 }
 footer .reseaux {
   width: 20%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.main .titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .titre h2 {
+  text-align: center;
+  color: #e1208d;
+  font-size: 2em;
+  width: 55%;
+}
+.main .titre .grostitre {
+  font-size: 2.5em;
+  width: 20%;
+  border: 5px #e1208d double;
+}
+.main .articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main .articles figure {
+  width: 27%;
+  border: 5px solid #222;
+  border-radius: 3em;
+}
+.main .articles figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 2%;
+  height: 15%;
+  font-size: 1.3em;
+  border-bottom: 3px solid #222;
+}
+.main .articles figure figcaption span {
+  height: 50%;
+}
+.main .articles figure img {
+  width: 100%;
+  border-radius: 0em 0em 3em 3em;
+  height: 84.5%;
+}
+.main .hidden,
+.main [hidden] {
+  display: none !important;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=sassStyle.css.map */
