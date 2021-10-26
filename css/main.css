@@ -207,6 +207,13 @@ header ul{
   }
 
 
+/* css de la page boutiques*/
+
+.mapid{
+  height: 800px;
+}
+
+
 /* css du footer */
 footer {
   height: 150px;
@@ -232,6 +239,7 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 
 
 
