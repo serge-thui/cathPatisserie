@@ -66,26 +66,37 @@ header ul{
       color: #999;
     }
     .menuderoulant{
+      min-width: 150px;
       position: relative;
       display :inline-block;
-    }
+      text-align: center; 
+      }
     .sous-menu{
       background: #fff;
       position: absolute;
-      top: 80px;
       display: none;
-      min-width: 150px;
+      box-shadow: 04px 4px 2px #ccc;
+      min-width: 300px;
       font-size: 0.5em;
-     /* padding-top: 300px;*/
+      text-align: left;
     }
     .sous-menu a{
       padding: 20px;
       text-decoration: none;
       display: block;
+      border: 1px solid #222;
+    }
+
+    .sous-menu a:hover{
+      background-color: #ccc;
     }
     .menuderoulant:hover .sous-menu{
       display: block;
     }
+
+
+
+
 
 /* css index.html */ 
   /*accueil-top*/
@@ -111,9 +122,8 @@ header ul{
     position: relative;  
     transform: translate(-50%, -50%);
     user-select: none;
+    text-align: center;
   }
-  
- 
   
   .items .item {
     position: absolute;
