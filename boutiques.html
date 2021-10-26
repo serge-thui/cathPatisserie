@@ -23,8 +23,14 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/sassStyle.css">
-
+  <link rel="stylesheet" href="sassStyle.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://www.google-analytics.com/analytics.js" async></script>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -52,44 +58,15 @@
 
   </header>
 
-  <main class="accueil">
-  <!-- section accueil-top avec photos -->
-  <section class="accueil-top">
-    <h2 class="hidden">pâtisserie diététique</h2>
-    <figure><img src="img/realisations/entremetfraise.png" alt="photo de fraisier"></figure>
-    <figure><img src="img/realisations/choux.png" alt="photo de choux chocolat vanille"></figure>
-    <figure><img src="img/realisations/flan.png" alt="flan coco"></figure>
-  </section>
-
-  <!-- section carousel -->
-  <section class="carousel">
+  <main id="mapid">
     
-        <h1>Une petite douceur</h1>
-        
-        <ul class="items">
-          <li class="item active"><figure><img src="img/realisations/4gateaux.png" alt=""><figcaption><span>quatre gâteaux</span></figcaption></figure>
-            </li>
-          <li class="item next"><figure><img src="img/realisations/choux.png" alt=""><figcaption><span>choux</span></figcaption></figure>
-            </li>
-          <li class="item"><figure><img src="img/realisations/eclaircafe.png" alt=""><figcaption><span>éclair au café</span></figcaption></figure>
-            </li>
-          <li class="item"><figure><img src="img/realisations/entremetfraise.png" alt=""><figcaption><span>entremets fraises</span></figcaption></figure>
-            </li>
-          <li class="item prev"><figure><img src="img/realisations/millefeuille.png" alt=""><figcaption><span>millefeuille</span></figcaption></figure>
-            </li>
-          <li class="button-container">
-            <div class="button"><i class="fa fa-angle-left"></i></div>
-            <div class="button"><i class="fa fa-angle-right"></i></div>
-          </li>
-        </ul>
-  </section>
 
 
-    <hr>
   </main>
-  
-  <footer>
 
+
+  <footer>
+   
     <section class="contact">
       <h2 class="hidden">pâtisserie Valencienne</h2>
       <ul>
@@ -99,17 +76,21 @@
       </ul>
     </section>
 
-    <figure class="figurefooter">
+    <figure class="logoFooter">
       <img src="img/cathlogo.png" alt="logo du site">
     </figure>
 
+
     <section class="reseaux">
-      <h2 class="hidden">pâtisserie allégées</h2> 
+      <h2 class="hidden">pâtisserie diététique</h2>
+
+    
+
       <figure>
         <a href=""><img src="img/reseaux/facebook51.png" alt="logo facebook"></a>
       </figure>
       <figure>
-        <a href=""><img src="img/reseaux/youtube51.png" alt="logo youtube"></a>
+        <a href="https://www.youtube.com/"><img src="img/reseaux/youtube51.png" alt="logo youtube"></a>
       </figure>
       <figure>
         <a href="https://www.instagram.com/patisseriesdietetiques/"><img src="img/reseaux/insta51.png" alt="logo instagrame"></a>
@@ -127,7 +108,7 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
 
 </html>

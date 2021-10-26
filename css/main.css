@@ -16,14 +16,10 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-body {
+body, figure {
   margin: 0;
   padding: 0;
   
-}
-figure, ul{
-  margin: 0;
-  padding: 0;
 }
 a{
   text-decoration: none;
@@ -33,6 +29,7 @@ a{
 li{
   list-style: none;
 }
+
 
 /* Css du header */
 
@@ -70,26 +67,37 @@ header ul{
       color: #999;
     }
     .menuderoulant{
+      min-width: 150px;
       position: relative;
       display :inline-block;
-    }
+      text-align: center; 
+      }
     .sous-menu{
       background: #fff;
       position: absolute;
-      top: 80px;
       display: none;
-      min-width: 150px;
+      box-shadow: 04px 4px 2px #ccc;
+      min-width: 300px;
       font-size: 0.5em;
-     /* padding-top: 300px;*/
+      text-align: left;
     }
     .sous-menu a{
       padding: 20px;
       text-decoration: none;
       display: block;
+      border: 1px solid #222;
+    }
+
+    .sous-menu a:hover{
+      background-color: #ccc;
     }
     .menuderoulant:hover .sous-menu{
       display: block;
     }
+
+
+
+
 
 /* css index.html */ 
   /*accueil-top*/
@@ -112,19 +120,11 @@ header ul{
   }
   
   .items {
-    
-    position: relative;
-    
+    position: relative;  
     transform: translate(-50%, -50%);
     user-select: none;
+    text-align: center;
   }
-   .items li{
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-items: center;
-       
-   }
   
   .items .item {
     position: absolute;
@@ -133,10 +133,7 @@ header ul{
     transform: translate(-50%, -50%);
     width: 250px;
     height: 280px;
-    
-   /* overflow: hidden;*/
     transition: all 300ms ease-in-out;
-    /*z-index: -1;*/
     opacity: 0;
   }
   
@@ -148,12 +145,11 @@ header ul{
   
   .item.active {
     opacity: 1;
-    z-index: 99;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;  
   }
   
   .item.prev {
-    z-index: 2;
+   
     opacity: 0.25;
     transform: translate(-200%, -50%) scale(.85);
   }
@@ -170,7 +166,7 @@ header ul{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    z-index: 100;
+    
   }
   
   .button-container .button {
@@ -208,31 +204,16 @@ header ul{
   }
 
 
+/* css de la page boutiques*/
+
+#mapid{
+  height: 800px;
+  position: unset;
+}
+
+
 /* css du footer */
-footer {
-  height: 150px;
-  width: 100%;
-  bottom: 0;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.contact{
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-} 
-.logoFooter img{
-  height: 100px;
-}
-.reseaux{
-  width: 20%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
+
 
 
 
