@@ -57,6 +57,8 @@ function init(){
 
     const map = L.map('mapid').setView([val.lati, val.lng], zoomlevel);
 
+    
+
     const mainLayer = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
@@ -66,5 +68,17 @@ function init(){
         accessToken: 'pk.eyJ1IjoiZHJhZ29zZXIiLCJhIjoiY2t2ODYzZWxtMXgzNzJ1czMwYjQzb3QzYSJ9.mpL153S2L-ReRzS-G2zk1g'
     });
 
+    const boutique1 = L.marker([50.4581196,3.3524416],{title: 'boutique1'});
+    boutique1.addTo(map);
+    boutique1.bindPopup("This is my house").openPopup();
+
+    const boutique2 = L.marker([50.6241256,3.0568954],{title: 'boutique2'});
+    boutique2.addTo(map);
+    boutique2.bindPopup("Simplon<br>Lille").openPopup();
+
+    const boutique3 = L.marker([50.3664744,3.5265802], {title: 'boutique3'});
+    boutique3.addTo(map);
+    boutique3.bindPopup("Citroën<br>Valenciennes").openPopup();
+    
     mainLayer.addTo(map);
 }
