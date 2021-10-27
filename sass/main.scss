@@ -1,4 +1,11 @@
-@import "./layout/footer";
-@import "./pages/gallerie";
 @import "./base/typography";
+
+@import "./utils/mixins";
+
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/suggestion";
+
+@import "./pages/gallerie";
+@import "./pages/contact";
 @import "./pages/apropos";
