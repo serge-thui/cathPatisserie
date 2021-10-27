@@ -207,6 +207,7 @@ header ul{
 /* css de la page boutiques*/
 
 #mapid{
+  margin: 50px;
   height: 800px;
   position: unset;
 }
