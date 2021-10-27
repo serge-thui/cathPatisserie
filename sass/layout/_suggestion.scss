@@ -1,0 +1,25 @@
+h2 {
+    margin-left: 3em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.suggestion_liste {
+    display: flex;
+    justify-content: space-evenly;
+        
+        figcaption {
+            display: flex;
+            justify-content: space-between;
+
+                p {
+                    margin: 0;
+                }
+        }
+}
+
+@include mobile {
+    h2, .suggestion {
+    display: none;
+    }
+}
