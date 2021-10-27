@@ -16,7 +16,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
 }
-body {
+body, figure {
   margin: 0;
   padding: 0;
   
@@ -29,6 +29,7 @@ a{
 li{
   list-style: none;
 }
+
 
 /* Css du header */
 
@@ -203,7 +204,16 @@ header ul{
   }
 
 
+/* css de la page boutiques*/
+
+#mapid{
+  height: 800px;
+  position: unset;
+}
+
+
 /* css du footer */
+
 
 
 
