@@ -22,7 +22,7 @@
   <!--  -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="sassStyle.css">
+  <link rel="stylesheet" href="css/sassStyle.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -62,15 +62,19 @@
             
         </figure>
 
-        <h1 class="produit__nom">Nom du produit</h1>
-        <h2 class="produit__details">Détails sur le produit</h2>
+        <article class="produit__side">
 
-        <p class="produit_prix">Prix</p>
+          <h1 class="produit__side__nom">Nom du produit</h1>
+          <h2 class="produit__side__details">Détails sur le produit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean leo justo, fringilla non eleifend sed, iaculis in elit. Praesent maximus diam id mi feugiat, ac iaculis eros ultrices. Praesent odio magna, varius mollis feugiat nec, aliquam vitae felis. Fusce viverra erat augue, in fermentum ipsum fringilla quis. Integer eu mollis ex. </h2>
 
-        <label for="produit_quantite">Quantité</label>
-        <input type="number" name="produit_quantite" class="produit_quantite" id="produit_quantite" step="1" min="0" placeholder="0">
+          <p class="produit__side__prix">Prix</p>
 
-        <input type="submit" name="submit" value="Ajouter au panier">
+          <label for="produit__side__quantite">Quantité</label>
+          <input type="number" name="produit_quantite" class="produit__side__quantite" step="1" min="0" placeholder="0">
+
+          <input type="submit" name="submit" class="produit__side__ajoutPanier" value="Ajouter au panier">
+        
+        </article>
 
     </section>
 
