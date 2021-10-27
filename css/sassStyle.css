@@ -264,9 +264,49 @@ html {
 .details {
   margin-left: 10em;
   margin-top: 5em;
-  font-size: 1.5em;
 }
 
+@media screen and (max-width: 599px) {
+  .produit {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .produit__principal {
+    grid-template-columns: 1fr;
+  }
+  .produit figure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .produit .produit__side {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .produit .produit__side__nom {
+    margin-top: 2em;
+    text-align: center;
+  }
+  .produit .produit__side__details {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: justify;
+  }
+  .produit .produit__side__prix {
+    margin-left: 2em;
+  }
+  .produit .produit__side__quantite, .produit .produit__side label {
+    margin-left: 2em;
+  }
+  .produit .produit__side__ajoutPanier {
+    margin-top: 2em;
+  }
+  .produit .details {
+    margin-left: 2em;
+    margin-bottom: 3em;
+  }
+}
 .apropos .apropos__titre {
   display: flex;
   flex-direction: column;
