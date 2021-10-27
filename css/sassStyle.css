@@ -1,0 +1,228 @@
+h1, h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+}
+
+footer {
+  height: 150px;
+  width: 100%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .contact {
+  width: 25%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+footer .contact ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0%;
+  padding: 0%;
+}
+footer .contact ul li {
+  font-weight: bold;
+  text-align: center;
+  list-style-type: none;
+  color: #e1208d;
+}
+footer .figurefooter {
+  margin: 0;
+  height: 100%;
+}
+footer .figurefooter img {
+  height: 100%;
+}
+footer .reseaux {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 80%;
+  height: 50em;
+  margin: auto;
+  background-color: whitesmoke;
+  padding: 1em;
+  box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.34);
+}
+form legend {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+form input {
+  width: 45%;
+  padding: 0.3em;
+  margin: 0.3em;
+}
+form .nom_prenom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+form .nom_prenom .nom, form .nom_prenom .prenom {
+  width: 45%;
+  margin: 0.3em;
+}
+form textarea {
+  width: 98.5%;
+  margin: 0.3em;
+}
+form .btn_submit_reset {
+  width: 100%;
+  height: 8%;
+  font-size: 1.5em;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+form .btn_submit_reset input[type=submit], form .btn_submit_reset input[type=reset] {
+  width: 50%;
+  background-color: #c7c7c7;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form .btn_submit_reset input[type=submit]:hover, form .btn_submit_reset input[type=reset]:hover {
+  background-color: #353535;
+  color: white;
+}
+
+.suggestion h2 {
+  margin-left: 3em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+.suggestion .suggestion_liste {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+.suggestion .suggestion_liste figcaption {
+  display: flex;
+  justify-content: space-between;
+}
+.suggestion .suggestion_liste figcaption p {
+  margin: 0;
+}
+
+@media screen and (max-width: 599px) {
+  .suggestion {
+    display: none;
+  }
+}
+.main .titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .titre h2 {
+  text-align: center;
+  color: #e1208d;
+  font-size: 2em;
+  width: 55%;
+}
+.main .titre .grostitre {
+  font-size: 2.5em;
+  width: 20%;
+  border: 5px #e1208d double;
+}
+.main .articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main .articles figure {
+  width: 27%;
+  border: 5px solid #222;
+  border-radius: 3em;
+}
+.main .articles figure figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+  padding-left: 2%;
+  height: 15%;
+  font-size: 1.3em;
+  border-bottom: 3px solid #222;
+}
+.main .articles figure figcaption span {
+  height: 50%;
+}
+.main .articles figure img {
+  width: 100%;
+  border-radius: 0em 0em 3em 3em;
+  height: 84.5%;
+}
+.main .hidden,
+.main [hidden] {
+  display: none !important;
+}
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contactTitle {
+  text-align: center;
+  padding: 2em;
+}
+
+.contact_form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-evenly;
+}
+.contact_form figure {
+  width: 100%;
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+}
+.contact_form figure img {
+  width: auto;
+  box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.34);
+}
+
+@media screen and (max-width: 599px) {
+  .contact_form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+  }
+  .contact_form figure {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=sassStyle.css.map */
