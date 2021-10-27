@@ -1,25 +1,28 @@
-h2 {
-    margin-left: 3em;
-    padding-top: 3em;
-    padding-bottom: 2em;
-}
+.suggestion {
+    h2 {
+        margin-left: 3em;
+        padding-top: 3em;
+        padding-bottom: 2em;
+    }
 
-.suggestion_liste {
-    display: flex;
-    justify-content: space-evenly;
+    .suggestion_liste {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2em;
         
-        figcaption {
-            display: flex;
-            justify-content: space-between;
+            figcaption {
+                display: flex;
+                justify-content: space-between;
 
-                p {
-                    margin: 0;
-                }
-        }
+                    p {
+                        margin: 0;
+                    }
+            }
+    }
 }
 
 @include mobile {
-    h2, .suggestion {
+.suggestion {
     display: none;
     }
 }
