@@ -205,7 +205,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 99;
-  box-shadow: 4px 4px 2px #ccc;
 }
 
 nav ul ul {
@@ -246,6 +245,7 @@ label.toggle {
     left: 0px;
     background-color: #fff;
     align-items: flex-start;
+    box-shadow: 4px 4px 2px #ccc;
   }
 
   input.toggle, .toggle span {
@@ -573,7 +573,31 @@ html {
   text-align: center;
 }
 
-<<<<<<< HEAD
+@media screen and (max-width: 1200px) {
+  .apropos__element1, .apropos__element2 {
+    font-size: 0.5em;
+    line-height: 0.7em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .apropos__element1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0% !important;
+  }
+  .apropos__element1 .apropos__element__photo1 {
+    width: 70% !important;
+  }
+
+  .apropos__element2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 0% !important;
+  }
+  .apropos__element2 .apropos__element__photo2 {
+    width: 70% !important;
+  }
+}
 /*accueil-top*/
 .accueil-top {
   height: 40%;
@@ -679,32 +703,6 @@ html {
 
 .button-container .button:nth-child(2) {
   float: right;
-=======
-@media screen and (max-width: 1200px) {
-  .apropos__element1, .apropos__element2 {
-    font-size: 0.5em;
-    line-height: 0.7em;
-  }
-}
-@media screen and (max-width: 599px) {
-  .apropos__element1 {
-    flex-direction: column-reverse;
-    align-items: center;
-    margin: 0% !important;
-  }
-  .apropos__element1 .apropos__element__photo1 {
-    width: 70% !important;
-  }
-
-  .apropos__element2 {
-    flex-direction: column;
-    align-items: center;
-    margin: 0% !important;
-  }
-  .apropos__element2 .apropos__element__photo2 {
-    width: 70% !important;
-  }
->>>>>>> 9cf766225476f7754e5f3966dae53c5cbfd73a3a
 }
 
 /*# sourceMappingURL=sassStyle.css.map */

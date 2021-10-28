@@ -52,7 +52,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    box-shadow: 04px 4px 2px #ccc;
+    
 }
 
 nav ul ul { display: none; }
@@ -84,7 +84,8 @@ label.toggle {
           top:120px;
           left: 0px;
           background-color: #fff;
-        align-items: flex-start;}
+        align-items: flex-start;
+        box-shadow: 04px 4px 2px #ccc;}
   
     input.toggle,  .toggle span { display: none; }
   
