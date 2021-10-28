@@ -49,6 +49,57 @@
 
 .details {
     margin-left: 10em;
-    margin-top: 5em;
-    font-size: 1.5em;
+    margin-top: 5em;      
+}
+
+@include mobile {
+    .produit {
+        display: grid;
+        grid-template-columns: 1fr;
+
+            &__principal {
+                grid-template-columns: 1fr;
+            }
+
+            figure {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                
+            }
+
+            .produit__side {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                
+                    &__nom {
+                        margin-top: 2em;
+                        text-align: center;
+                    }
+
+                    &__details {
+                        margin-left: 2em;
+                        margin-right: 2em;
+                        text-align: justify;
+                    }
+
+                    &__prix {
+                        margin-left: 2em;
+                    }
+        
+                    &__quantite, label {
+                        margin-left: 2em;
+                    }
+        
+                    &__ajoutPanier {
+                        margin-top: 2em;
+                    }
+            }
+
+            .details {
+                margin-left: 2em;
+                margin-bottom: 3em;
+            }
+    }
 }
