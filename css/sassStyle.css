@@ -217,28 +217,33 @@ form .btn_submit_reset input[type=submit]:hover, form .btn_submit_reset input[ty
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.main .articles figure {
+.main .articles a {
   width: 27%;
+  margin-bottom: 3%;
   border: 5px solid #222;
   border-radius: 3em;
 }
-.main .articles figure figcaption {
+.main .articles a figure {
+  width: 100%;
+  height: 100%;
+}
+.main .articles a figure figcaption {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 5%;
   padding-left: 2%;
-  height: 15%;
+  height: 20%;
   font-size: 1.3em;
   border-bottom: 3px solid #222;
 }
-.main .articles figure figcaption span {
+.main .articles a figure figcaption span {
   height: 50%;
 }
-.main .articles figure img {
+.main .articles a figure img {
   width: 100%;
   border-radius: 0em 0em 3em 3em;
-  height: 84.5%;
+  height: 79.5%;
 }
 .main .hidden,
 .main [hidden] {
@@ -292,6 +297,7 @@ html {
   width: 50%;
 }
 .produit__principal .produit__side {
+  margin-left: 3%;
   width: 50%;
   display: flex;
   flex-direction: column;
