@@ -69,3 +69,21 @@
         line-height: 0.7em;
     }
 }
+@include mobile {
+    .apropos__element1{
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0% !important;
+        & .apropos__element__photo1{
+        width: 70% !important;
+        }
+    }
+    .apropos__element2{
+    flex-direction: column;
+    align-items: center;
+    margin: 0% !important;
+        & .apropos__element__photo2{
+            width: 70% !important;
+        }
+    }
+}
