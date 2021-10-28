@@ -12,7 +12,7 @@ footer {
   padding-bottom: 1%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 footer .contact {
@@ -20,6 +20,7 @@ footer .contact {
   display: flex;
   height: 100%;
   justify-content: center;
+  margin-left: 2%;
 }
 footer .contact ul {
   height: 100%;
@@ -44,10 +45,11 @@ footer .figurefooter img {
   height: 100%;
 }
 footer .reseaux {
-  width: 20%;
+  width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-right: 2%;
 }
 
 .hidden,
@@ -55,6 +57,21 @@ footer .reseaux {
   display: none !important;
 }
 
+@media screen and (max-width: 599px) {
+  footer {
+    flex-direction: column;
+  }
+  footer .contact {
+    width: 100%;
+  }
+  footer .figurefooter {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  footer .reseaux {
+    width: 80%;
+  }
+}
 form {
   display: flex;
   flex-direction: column;
@@ -420,6 +437,25 @@ html {
   .apropos__element1, .apropos__element2 {
     font-size: 0.5em;
     line-height: 0.7em;
+  }
+}
+@media screen and (max-width: 599px) {
+  .apropos__element1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0% !important;
+  }
+  .apropos__element1 .apropos__element__photo1 {
+    width: 70% !important;
+  }
+
+  .apropos__element2 {
+    flex-direction: column;
+    align-items: center;
+    margin: 0% !important;
+  }
+  .apropos__element2 .apropos__element__photo2 {
+    width: 70% !important;
   }
 }
 
