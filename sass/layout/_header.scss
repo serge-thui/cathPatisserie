@@ -1,59 +1,161 @@
-label, #toggle{
-    display: none;
-}
-.burger{   
-    position: relative;
-    display: inline-block;
-    display: none;
-}
-.burger img{
-    width: 50px;
-    height: 50px;
+
+header{
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2em;
+    background:no-repeat url(/img/cooking-g4950c2972_640.jpg);
+    background-size: cover;
+    padding-left: 20px;
+    
+  }
+   
+  header ul{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-.menuBurger{
-    height: 200px;
-    width: 300px;
+.logo-du-site {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    display: none;
-    left: 0;
-    top:0;
+    justify-content: center;
+}
+.logo-du-site img{
+    height: 100px;
+    width: 200px;   
+}
+.iconePanier img{
+    height: 40px;
+    width: 40px;
+  }
+
+/*menu burger*/
+label{
     z-index: 99;
-    transition: left 1s;
-    position: fixed;
 }
-.menuBurger li{
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    box-shadow: 04px 4px 2px #ccc;
+}
+
+nav ul ul { display: none; }
+
+nav ul ul li { float: none; }
+
+nav li { float: left;
+list-style: none; }
+
+nav li:hover ul {
+  display: inline-block;
+  position: absolute;
+}
+
+input.toggle, label.toggle { display: none; }
+
+label.toggle {
+  font-weight: 900;
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+@media (max-width: 960px) {
+    
+
+    nav { display: none;
+          width: 200px;
+          height: 250px; 
+          position: absolute;
+          top:120px;
+          left: 0px;
+          background-color: #fff;
+        align-items: flex-start;}
+  
+    input.toggle,  .toggle span { display: none; }
+  
+    input[type=checkbox]:checked ~ nav,  label.toggle {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .iconePanier{
+        padding-left: 25px;
+    }
+    .sous-menu{
+        position: absolute;
+        top: -40px;
+        left: 185px;
+    }
+    .nav-left, .nav-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        left: 0;
+    }
+  
+    nav li { float: none;
     height: 50px;
-}
-
-
-
-
-
-
-@include mobile{
-    
-    label{
-        display: block;
+    }
+  
+    nav li:hover ul {
+      display: block;
+      position: relative;
     }
 
-    #toggle:checked + .menuBurger{
-        display: block;
+    nav li ul { display: block; }
+  
+    nav li a {
+      display: block;
+      padding-left: 20px;   
     }
-    
-    .nav-left{
-        display: none;
-    }
-    .nav-right a{
-        display: none;
-    }
-    .logo-du-site{
-        margin: auto;
-    }
+  }
 
-    #toggle2:checked + .menuBurger{
-        display: none;
+
+  /* css du menu déroulant*/
+  .menuderoulant:hover{
+    color: #999;
+  }
+  .menuderoulant{
+    min-width: 150px;
+    position: relative;
+    display :inline-block;
+    text-align: center; 
     }
-}
+  .sous-menu{
+    background: #fff;
+    position: absolute;
+    display: none;
+    box-shadow: 04px 4px 2px #ccc;
+    min-width: 300px;
+    font-size: 0.5em;
+    text-align: left;
+  }
+  .sous-menu a{
+    padding: 20px;
+    text-decoration: none;
+    display: block; 
+  }
+
+  .sous-menu a:hover{
+    background-color: #ccc;
+  }
+  .menuderoulant:hover .sous-menu{
+    display: block;
+  }
+
+

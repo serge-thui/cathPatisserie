@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1, h2 {
   font-family: "Dancing Script", cursive;
 }
@@ -133,64 +134,185 @@ form .btn_submit_reset input[type=submit]:hover, form .btn_submit_reset input[ty
     display: none;
   }
 }
-label, #toggle {
+header {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  background: no-repeat url(/img/cooking-g4950c2972_640.jpg);
+  background-size: cover;
+  padding-left: 20px;
+}
+
+header ul {
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logo-du-site {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-du-site img {
+  height: 100px;
+  width: 200px;
+}
+
+.iconePanier img {
+  height: 40px;
+  width: 40px;
+}
+
+/*menu burger*/
+label {
+  z-index: 99;
+}
+
+nav {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  box-shadow: 4px 4px 2px #ccc;
+}
+
+nav ul ul {
   display: none;
 }
 
-.burger {
+nav ul ul li {
+  float: none;
+}
+
+nav li {
+  float: left;
+  list-style: none;
+}
+
+nav li:hover ul {
+  display: inline-block;
+  position: absolute;
+}
+
+input.toggle, label.toggle {
+  display: none;
+}
+
+label.toggle {
+  font-weight: 900;
+  font-size: 1.2em;
+  padding: 10px 20px;
+}
+
+@media (max-width: 960px) {
+  nav {
+    display: none;
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+    background-color: #fff;
+    align-items: flex-start;
+  }
+
+  input.toggle, .toggle span {
+    display: none;
+  }
+
+  input[type=checkbox]:checked ~ nav, label.toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .iconePanier {
+    padding-left: 25px;
+  }
+
+  .sous-menu {
+    position: absolute;
+    top: -40px;
+    left: 185px;
+  }
+
+  .nav-left, .nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    left: 0;
+  }
+
+  nav li {
+    float: none;
+    height: 50px;
+  }
+
+  nav li:hover ul {
+    display: block;
+    position: relative;
+  }
+
+  nav li ul {
+    display: block;
+  }
+
+  nav li a {
+    display: block;
+    padding-left: 20px;
+  }
+}
+/* css du menu déroulant*/
+.menuderoulant:hover {
+  color: #999;
+}
+
+.menuderoulant {
+  min-width: 150px;
   position: relative;
   display: inline-block;
+  text-align: center;
+}
+
+.sous-menu {
+  background: #fff;
+  position: absolute;
   display: none;
+  box-shadow: 4px 4px 2px #ccc;
+  min-width: 300px;
+  font-size: 0.5em;
+  text-align: left;
 }
 
-.burger img {
-  width: 50px;
-  height: 50px;
+.sous-menu a {
+  padding: 20px;
+  text-decoration: none;
+  display: block;
 }
 
-.menuBurger {
-  height: 200px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  display: none;
-  left: 0;
-  top: 0;
-  z-index: 99;
-  transition: left 1s;
-  position: fixed;
+.sous-menu a:hover {
+  background-color: #ccc;
 }
 
-.menuBurger li {
-  height: 50px;
+.menuderoulant:hover .sous-menu {
+  display: block;
 }
 
-@media screen and (max-width: 599px) {
-  label {
-    display: block;
-  }
-
-  #toggle:checked + .menuBurger {
-    display: block;
-  }
-
-  .nav-left {
-    display: none;
-  }
-
-  .nav-right a {
-    display: none;
-  }
-
-  .logo-du-site {
-    margin: auto;
-  }
-
-  #toggle2:checked + .menuBurger {
-    display: none;
-  }
-}
 .main .titre {
   display: flex;
   flex-direction: column;
@@ -386,6 +508,113 @@ html {
 }
 .apropos .apropos__element2 .apropos__element__photo2 figcaption {
   text-align: center;
+}
+
+/*accueil-top*/
+.accueil-top {
+  height: 40%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#mapid {
+  margin: 50px;
+  height: 800px;
+  position: unset;
+}
+
+/* carousel de l'accueil */
+.carousel {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.items {
+  position: relative;
+  transform: translate(-50%, -50%);
+  user-select: none;
+  text-align: center;
+}
+
+.items .item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 280px;
+  transition: all 300ms ease-in-out;
+  opacity: 0;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item.active {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.item.prev {
+  opacity: 0.25;
+  transform: translate(-200%, -50%) scale(0.85);
+}
+
+.item.next {
+  z-index: 2;
+  opacity: 0.25;
+  transform: translate(100%, -50%) scale(0.85);
+}
+
+.items .button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+.button-container .button {
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.75;
+  transition: all 300ms ease-in-out;
+}
+
+.button-container .button:hover {
+  opacity: 1;
+}
+
+.button-container .button:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: -99;
+}
+
+.button-container .button:nth-child(1) {
+  float: left;
+}
+
+.button-container .button:nth-child(2) {
+  float: right;
 }
 
 /*# sourceMappingURL=sassStyle.css.map */
