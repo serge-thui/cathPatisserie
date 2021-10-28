@@ -4,8 +4,10 @@
   "keywords": [],
   "license": "ISC",
   "author": "",
+  "browserslist": "last 4 versions",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/sassStyle.css"
+    "sass": "sass --watch ./sass/main.scss:./css/sassStyle.css --style compressed",
+    "prefix": "postcss ./css/sassStyle.css --use autoprefixer -d ./css/prefixed/"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"

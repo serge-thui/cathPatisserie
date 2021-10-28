@@ -26,3 +26,8 @@
     display: none;
     }
 }
+@include desktopxsmall {
+.suggestion {
+    display: none;
+    }
+}
