@@ -133,7 +133,7 @@ form .btn_submit_reset input[type=submit]:hover, form .btn_submit_reset input[ty
     display: none;
   }
 }
-#toggle {
+label, #toggle {
   display: none;
 }
 
@@ -162,8 +162,16 @@ form .btn_submit_reset input[type=submit]:hover, form .btn_submit_reset input[ty
   position: fixed;
 }
 
+.menuBurger li {
+  height: 50px;
+}
+
 @media screen and (max-width: 599px) {
-  .burger, .iconePanier {
+  label {
+    display: block;
+  }
+
+  #toggle:checked + .menuBurger {
     display: block;
   }
 
@@ -177,6 +185,10 @@ form .btn_submit_reset input[type=submit]:hover, form .btn_submit_reset input[ty
 
   .logo-du-site {
     margin: auto;
+  }
+
+  #toggle2:checked + .menuBurger {
+    display: none;
   }
 }
 .main .titre {

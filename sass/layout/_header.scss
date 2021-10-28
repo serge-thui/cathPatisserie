@@ -1,4 +1,4 @@
-#toggle{
+label, #toggle{
     display: none;
 }
 .burger{   
@@ -24,6 +24,9 @@
     transition: left 1s;
     position: fixed;
 }
+.menuBurger li{
+    height: 50px;
+}
 
 
 
@@ -31,9 +34,15 @@
 
 
 @include mobile{
-    .burger, .iconePanier{
+    
+    label{
         display: block;
     }
+
+    #toggle:checked + .menuBurger{
+        display: block;
+    }
+    
     .nav-left{
         display: none;
     }
@@ -44,4 +53,7 @@
         margin: auto;
     }
 
+    #toggle2:checked + .menuBurger{
+        display: none;
+    }
 }
