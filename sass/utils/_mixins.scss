@@ -3,3 +3,13 @@
         @content;
     }
 }
+@mixin desktopsmall {
+    @media screen and (max-width: 1200px){
+        @content;
+    }
+}
+@mixin desktopxsmall {
+    @media screen and (max-width: 1000px){
+        @content;
+    }
+}
