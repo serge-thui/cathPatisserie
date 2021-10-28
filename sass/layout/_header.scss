@@ -47,11 +47,16 @@ header{
     top: 0;
     display: flex;
     justify-content: center;
+    
 }
 .logo-du-site img{
     height: 100px;
-    width: 200px;   
+    width: 200px;  
 }
+.logo-du-site a{
+    z-index: 100;
+}
+
 .iconePanier img{
     height: 40px;
     width: 40px;

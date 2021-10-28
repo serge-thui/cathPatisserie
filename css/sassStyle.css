@@ -209,6 +209,10 @@ header ul {
   width: 200px;
 }
 
+.logo-du-site a {
+  z-index: 100;
+}
+
 .iconePanier img {
   height: 40px;
   width: 40px;
