@@ -32,3 +32,14 @@
             }
     }
 }
+@include desktopxsmall {
+    .contact_form{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 100%;
+    
+            figure  {
+                display: none;
+            }
+    }
+}

@@ -53,7 +53,7 @@
     margin-top: 5em;      
 }
 
-@include mobile {
+@include desktop1300 {
     .produit {
         display: grid;
         grid-template-columns: 1fr;
@@ -74,6 +74,7 @@
                 display: flex;
                 justify-content: center;
                 
+                
                     &__nom {
                         margin-top: 2em;
                         text-align: center;
@@ -82,15 +83,18 @@
                     &__details {
                         margin-left: 2em;
                         margin-right: 2em;
-                        text-align: justify;
+                        padding-left: 20%;
+                        padding-right: 20%;
                     }
 
                     &__prix {
-                        margin-left: 2em;
+                        padding-left: 25%;
+                        padding-right: 20%;
                     }
         
                     &__quantite, label {
-                        margin-left: 2em;
+                        margin-left: 25%;
+                        margin-right: 20%;
                     }
         
                     &__ajoutPanier {
